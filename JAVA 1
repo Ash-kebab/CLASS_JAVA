@@ -1,0 +1,46 @@
+//Ashish Vinod
+public class Outputting
+{
+public static void main (String[]args)
+{
+// This section outputs "First" "Second " "Third" without the spaces   
+/*System.out.print("First");
+System.out.print("Second");
+System.out.print("Third");*/
+
+//This outputs "First" "Second " "Third" with a line in between each
+/*
+System.out.println("First");
+System.out.println("Second");
+System.out.println("Third");
+*/
+
+// it outputs first next to second and then third
+/*
+System.out.print("First");
+System.out.println("Second");
+System.out.println("Third");
+*/
+
+// Print just outputs it , println puts a line between the outputs
+
+System.out.println("From: Bill Smith");
+System.out.println("Address: Dell Computer, Bldg 13");
+System.out.println("Date: April 12, 2005 \n");
+System.out.println("To: Jack Jones \n \n  ");
+System.out.println("Message: Help! I’m trapped inside a computer!");
+
+System.out.println("Vv         vv   ");
+System.out.println(" vv       vv    ");
+System.out.println("  vv     vv     ");
+System.out.println("   vv   vv      ");
+System.out.println("    vv vv       ");
+System.out.println("     vvv        ");
+
+
+
+
+    
+
+}    
+}
