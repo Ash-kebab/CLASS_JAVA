@@ -1,0 +1,66 @@
+public class Lab
+  {
+  
+    public static void main(String[]args)
+      {
+        /*
+        1)
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter ur age ");
+        int age = scan.nextInt();
+        System.out.println("your age is : " + age ); */
+
+        2)
+
+    Scanner scan = new Scanner(System.in);
+    System.out.println("enter ur grades x 4 ");
+    Double t1 = scan.nextDouble();
+      Double t2 = scan.nextDouble();
+       Double t3 = scan.nextDouble();
+         Double  t4 = scan.nextDouble();
+    
+    System.out.println("your grade 1 is : " + t1);
+      System.out.println("your grade 2 is : " + t2);
+        System.out.println("your grade 3 is : " + t3);
+          System.out.println("your grade 4 is : " + t4);
+    
+    3)
+
+
+  Scanner scan = new Scanner(System.in);
+    System.out.println("enter ur name first last ");
+    String t1 = scan.next();
+      String t2 = scan.next();
+    
+    
+    System.out.println("your name is : " + t2 + " " +t1);
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+}
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+    
