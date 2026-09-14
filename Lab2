@@ -1,0 +1,88 @@
+1) It has an issue because there is an enter left after scanner.nextline , so nextline used nextInt()/nextDouble() causes the nextline to end early because what the nextline expects is already done.
+2) import java.util.Scanner;
+
+
+public class freinds
+{
+    public static void main(String[]args)
+    {
+    Scanner scammer = new Scanner(System.in);
+    int f1;
+    int f2;
+    int f3;
+    String s1;
+    String s2;
+    String s3;
+  
+    System.out.println("enter your freinds names in order ");
+     s1= scammer.nextLine();  
+      s1= scammer.nextLine(); 
+    System.out.println("enter your freinds age in order ");
+       f1 = scammer.nextInt();
+       System.out.println("enter your freinds names in order ");
+      s2= scammer.nextLine(); 
+      s2= scammer.nextLine(); 
+    System.out.println("enter your freinds age in order ");
+        f2 =  scammer.nextInt();
+       System.out.println("enter your freinds names in order ");
+       s3= scammer.nextLine();  
+       s3= scammer.nextLine(); 
+    System.out.println("enter your freinds age in order ");
+       f3 = scammer.nextInt();
+    
+    
+    System.out.println(s1 +" "+f1 + " " +s2+" "+f2 +" "+  s3 +" "+f3 );
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+}
+
+
+3)
+
+import java.util.Scanner;
+
+
+public class freinds
+{
+    public static void main(String[]args)
+    {
+    Scanner scammer = new Scanner(System.in);
+    int f1;
+    int f2;
+    int f3;
+    String s1;
+    String s2;
+    String s3;
+  
+    System.out.println("enter hieght width and color  ");
+    f2 = scammer.nextInt(); 
+    f1= scammer.nextInt();  
+    s1= scammer.nextLine();  
+    s1= scammer.nextLine();  
+    
+    Triangle tri = new Triangle();
+    tri.makeVisible();
+    tri.changeSize(f2 , f1);
+    tri.changeColor(s1);
+    
+    
+    
+  
+    
+
+    
+    
+    
+    
+    
+    
+    }
+    
+}
