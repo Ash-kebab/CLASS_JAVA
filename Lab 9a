@@ -1,0 +1,81 @@
+  1)
+
+int i = 5;
+    double d = 5.0;
+    String s = "stuff";
+    char  c = '@';
+    boolean t = true;
+    
+    System.out.println("my int is storing "+ i);
+    System.out.println("my double is storing "+d );
+    System.out.println("my s is storing "+s );
+    System.out.println("my c is storing "+c );
+    System.out.println("my t is storing "+ t);
+    
+    2)
+
+import java.util.Scanner;
+
+public class UserHouse
+{
+  public static void main (String[]args){
+    Square bob = new Square();
+    bob.makeVisible();
+    Triangle right = new Triangle();
+    right.makeVisible();
+    right.moveRight();
+    right.moveDown();
+    right.moveVertical(-15);
+    right.moveRight();
+    right.moveLeft();
+    right.moveHorizontal(5);
+    Circle curly = new Circle();
+    curly.makeVisible();
+    curly.moveVertical(-50);
+    curly.moveVertical(70);
+    curly.moveVertical(-70);
+    Scanner s = new Scanner(System.in);
+    System.out.println("enter a sun colour");
+    String s1 = s.nextLine();
+    System.out.println("enter a house  colour");
+        String s2 = s.nextLine();
+    System.out.println("enter a roof colour");
+        String s3 = s.nextLine();
+        
+        right.changeColor(s1);
+        curly.changeColor(s2);
+        bob.changeColor(s3);
+
+    
+}
+    
+    
+}
+
+3)
+
+import java.util.Scanner;
+
+public class UserHouse
+{
+  public static void main (String[]args){
+    Scanner s = new Scanner(System.in);
+
+    System.out.println("enter a int");
+    int s1 = s.nextInt();
+    System.out.println("enter a double ");
+        double s2 = s.nextDouble();
+    System.out.println("enter a noun");
+      s.nextLine();
+      String s3 = s.nextLine();
+        System.out.println("The family had "+s1+ " "+s3+" and the largest weighed "+s2+"lbs.");
+        
+        
+        
+
+    
+}
+    
+    
+}
+    
