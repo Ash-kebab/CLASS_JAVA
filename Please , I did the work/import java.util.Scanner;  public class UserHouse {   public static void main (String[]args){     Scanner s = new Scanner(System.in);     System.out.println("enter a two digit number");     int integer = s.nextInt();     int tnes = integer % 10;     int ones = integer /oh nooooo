@@ -1,0 +1,15 @@
+I swear I did all the work Ms.Daly 😭 😭 😭 😭 😭 😭 😭 
+4)
+
+import java.util.Scanner;
+
+public class UserHouse
+{
+  public static void main (String[]args){
+    Scanner s = new Scanner(System.in);
+    System.out.println("enter a two digit number");
+    int integer = s.nextInt();
+    int tnes = integer % 10;
+    int ones = integer / 10;
+    System.out.println("tens"+ones +" "+"ones :"+tnes+"");   
+} }
