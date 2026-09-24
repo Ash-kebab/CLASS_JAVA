@@ -11,5 +11,64 @@
 
 2)
 
+  Scanner s = new Scanner(System.in);
+   System.out.println("enter 3 words");
+   String s1 = s.nextLine();
+   String s2 = s.nextLine();
+   String s3 = s.nextLine();
+    System.out.println(s1 + s1.length());
+    System.out.println(s2 + s2.length());
+    System.out.println(s3 + s3.length());
+
+
+3)
+
+
+
+import java.util.Scanner;
+
+public class Lab12a
+{
+    public static void main(String [] args ) 
+    {
+        
+   /* System.out.println("------------");
+    System.out.println("\\  Yeild? /");
+    System.out.println(" \\------ /");
+    System.out.println("  \\---- /");
+    System.out.println("   \\-- /");
+    System.out.println("    \\-/");
+    
+    */
+   /*
+   Scanner s = new Scanner(System.in);
+   System.out.println("enter 3 words");
+   String s1 = s.nextLine();
+   String s2 = s.nextLine();
+   String s3 = s.nextLine();
+    System.out.println(s1 + s1.length());
+    System.out.println(s2 + s2.length());
+    System.out.println(s3 + s3.length());
+    
+    */
+    Scanner s = new Scanner(System.in);
+       System.out.println("enter 3 names");
+       
+   String s1 = s.nextLine();
+   String s2 = "  "; 
+      s2 += " " + s1 ; 
+   
+      s1 = s.nextLine();
+      s2 = s2+" "+ s1;
+   
+      s1 = s.nextLine();
+      s2 = s2+" "+ s1;
+   System.out.println(s2);
+   
+
+
+}       
+}
+
   
     
