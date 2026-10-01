@@ -1,0 +1,93 @@
+
+  //1)
+ import java.util.Scanner;
+
+/**
+ * Write a description of class MathClass here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class MathClass
+{
+    public static void main (String [] args) 
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter two doubles");
+        double n1 = s.nextDouble();
+        double n2 = s.nextDouble();
+        System.out.println(Math.max(n1,n2));
+        System.out.println("enter a negative");
+        double n3 = s.nextDouble();
+        System.out.println(Math.abs(n3));
+        System.out.println("enter a rndm strt(smaller) and end(big)");
+        double r1 = s.nextDouble();
+        double r2 = s.nextDouble();
+        System.out.println((int)(Math.random()*(r2-r1+1)) + r1);
+        System.out.println( Math.PI);
+        //3.141592653589793
+            
+        
+        
+        
+        
+    
+    
+    }
+}
+
+2)
+  Scanner s = new Scanner(System.in);
+        System.out.println("enter four ints");
+        int n1 = s.nextInt();
+        int n2 = s.nextInt();
+        int n3 = s.nextInt();
+        int n4 = s.nextInt();
+        int n12 = n1+n2;
+        int n34 = n3+n4;
+        int nI = n12 * n12;
+        int nII = Math.abs(n34);
+        int nIII = nI / nII ;
+        double fin = Math.sqrt(nIII);
+        System.out.println(fin);
+        
+3)
+
+  Scanner s = new Scanner(System.in);
+       int i = s.nextInt();
+       int o = s.nextInt();
+       System.out.println(i > o);
+       
+       System.out.println( i < o);
+            
+       System.out.println( i <= o);
+            
+       System.out.println(i >= o);
+            
+       System.out.println( i == o);
+            
+       System.out.println(i != o);
+            
+            
+        4)
+        Square s1 = new Square();
+            Square s2 = null;
+            Square s3 = s1;
+            
+            System.out.println(s1==s2);
+            System.out.println(s2==s3);
+            System.out.println(s1==s3);
+            System.out.println(s1 == null);     
+            System.out.println(s2 == null);       
+            System.out.println(s3 == null);       
+  
+                                          
+                   
+        
+        
+            
+
+
+ 
+        
+        
