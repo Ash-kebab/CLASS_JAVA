@@ -1,0 +1,49 @@
+//1
+   Scanner s = new Scanner(System.in);
+     System.out.println("enter a number to divided by 18 (no negatives nor zero");
+     int num = s.nextInt();
+     if(num<0)
+    {
+        System.out.println("no negatives here  pls !");    
+    }
+    else if (num == 0)
+    {
+    System.out.println("no zeros pls!!!!");
+    }
+    
+    else 
+    {
+    System.out.println(num/18 + "remainder : " + num % 18);
+    }
+     
+
+
+
+//2
+import java.util.Scanner;
+
+public class Control
+{
+ public static void main (String [] args ) {
+     Scanner s = new Scanner(System.in);
+     System.out.println("How many miles have you travelled ? ");
+     int num = s.nextInt();
+     int val1 = num - 1000;
+     int val2 = num -10000;
+     int val3 = num -11000;
+     int t ;
+     if(val3 >= 0)
+     {
+         t = (val1 * 1 ) + (val2 * 2 ) + (val3 * 5 ) ; 
+     }
+     
+    
+    
+    
+    
+    
+}
+}
+
+//3
+//4
