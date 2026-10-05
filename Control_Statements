@@ -46,4 +46,40 @@ public class Control
 }
 
 //3
+import java.util.Scanner;
+
+public class Control
+{
+ public static void main (String [] args ) {
+     Scanner s = new Scanner(System.in);
+     System.out.println("How many miles have you travelled ? ");
+     int num = s.nextInt();
+     int val1 = 0;
+     int val2 = 0 ;
+     int val3  = 0 ;
+     int t;
+     if (num < 1000){
+         val1 = num;
+    }
+     if (num > 1000 && num < 10001 ){
+         val1 = 1000;
+         val2 = num -1000;
+         
+    }
+     if (num >10000){
+         val1 = 1000;
+         val2 = 9000; 
+         val3 = num -10000;
+         
+    }
+    
+    t = (val1*1 ) + (val2 * 2) + (val3 * 5) ;  
+    
+ 
+    
+    
+    
+    
+}
+}
 //4
