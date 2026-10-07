@@ -15,37 +15,9 @@
     {
     System.out.println(num/18 + "remainder : " + num % 18);
     }
-     
-
 
 
 //2
-import java.util.Scanner;
-
-public class Control
-{
- public static void main (String [] args ) {
-     Scanner s = new Scanner(System.in);
-     System.out.println("How many miles have you travelled ? ");
-     int num = s.nextInt();
-     int val1 = num - 1000;
-     int val2 = num -10000;
-     int val3 = num -11000;
-     int t ;
-     if(val3 >= 0)
-     {
-         t = (val1 * 1 ) + (val2 * 2 ) + (val3 * 5 ) ; 
-     }
-     
-    
-    
-    
-    
-    
-}
-}
-
-//3
 import java.util.Scanner;
 
 public class Control
@@ -74,6 +46,30 @@ public class Control
     }
     
     t = (val1*1 ) + (val2 * 2) + (val3 * 5) ;  
+
+//3
+
+ Scanner s = new Scanner(System.in);
+     System.out.println("Enter either 'name' or 'color' ");
+     String inp = s.nextLine();
+     
+     if (inp.equals("color"))
+{
+    System.out.println("Enter color ");
+    String color = s.nextLine();
+    System.out.println("Nice color");
+}
+
+else if (inp.equals("name"))
+{
+
+     System.out.println("Enter name ");
+    String name = s.nextLine();
+    System.out.println("Hi " + name + "   nice to meet you");
+
+}       
+else 
+{System.out.println("what is that input bro , lock in!!!");}
     
  
     
@@ -83,3 +79,5 @@ public class Control
 }
 }
 //4
+
+
