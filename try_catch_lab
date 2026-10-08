@@ -1,0 +1,66 @@
+//1
+ Scanner s = new Scanner(System.in);
+    System.out.println("Enter an Integer Password");
+    int password = 0;
+    try 
+    {password = s.nextInt(); }
+    catch (Exception typemismatch)
+    {
+      System.out.println("input a proper pass bro");
+      s.nextLine();
+      password = s.nextInt(); 
+    
+    }
+    
+    System.out.println("Thankyou for the right pass" + password);
+
+//2
+import java.util.Scanner;
+
+public class Control
+{
+ public static void main (String [] args ) 
+{
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter two ints to divide with ");
+    int n1 ;
+    int n2 ; 
+    int n3 =1;
+    boolean t = false ; 
+    boolean o = false ; 
+    try 
+    {n1= s.nextInt(); }
+    catch (Exception typemismatch)
+    {
+      System.out.println("input a proper int bro ");
+      s.nextLine();
+      n1 = s.nextInt(); 
+      t = true ;
+    }
+       try 
+    {n2= s.nextInt(); }
+    catch (Exception typemismatch)
+    {
+      System.out.println("input a proper int bro ");
+      s.nextLine();
+      n2 = s.nextInt(); 
+      t = true ;
+    }
+       try  { n3 = n1/n2 ;  }
+    catch (Exception divideby0)
+    {
+     System.out.println ("you cant divide by zero gng ");
+     o = true;
+    }
+    
+ if (t == true )
+ {System.out.println("you had a mismatch error");}
+ else if (o ==  true ) 
+ {System.out.println("you had a div by zero error ");}
+ else 
+ System.out.println(n3);
+
+system.out.println(n3);
+    
+}
+}
