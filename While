@@ -1,0 +1,33 @@
+//1 
+import java.util.Scanner;
+
+
+public class while_Loops {
+public static void main (String [] args)
+    {
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter two integers");
+    int i = 1; 
+    int b = 1;
+    boolean err = true ;
+    
+    while(err == true )
+    {
+        try {
+            i = s.nextInt();
+            b = s.nextInt();
+            err = false;
+        }
+        catch(Exception e)
+        {
+            err = true;
+            System.out.println("Do better , enter a valid int ");
+            s.nextLine();
+            
+            
+        }
+    }
+   System.out.println(Math.max(i,b));
+    
+}
+}
