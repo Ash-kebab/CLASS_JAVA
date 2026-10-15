@@ -106,3 +106,32 @@ public static void main (String [] args)
     
 }
 }
+
+//4
+import java.util.Scanner;
+
+
+public class while_Loops {
+public static void main (String [] args)
+    {
+    Scanner s = new Scanner(System.in);
+    int i = 0;
+    String all = "" ;
+    System.out.println("in come the numbers divisi by 7 , stop with -1");
+    while (i != -1 )
+    {
+        System.out.println("input thy numbers");
+    i = s.nextInt();
+    if(i%7 == 0 && i > 0)
+    {
+    all += " " + i;
+}   
+
+    }
+    if(all.equals(""))
+    {
+    System.out.println("no numbers entred");
+    }
+    System.out.println(all);
+}
+}
