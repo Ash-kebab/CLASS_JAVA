@@ -1,0 +1,95 @@
+//1
+    
+    /**
+     * Write a description of class For_Loops here.
+     *
+     * @author (your name)
+     * @version (a version number or a date)
+     */
+    public class For_Loops
+    {
+        public static void main (String [] args)
+        {
+            int l = 0;
+              for (int i = 0 ; i < 10 ; i++)
+            {
+              int temp = (int) (Math.random()*16)+5;
+              System.out.println(temp);
+              l += temp;
+              //i++;
+                
+            }
+        
+        System.out.println(l/10.0);
+        
+        
+        
+        }
+    }
+
+//2
+import java.util.Scanner;
+    
+    /**
+     * Write a description of class For_Loops here.
+     *
+     * @author (your name)
+     * @version (a version number or a date)
+     */
+    public class For_Loops
+    {
+        public static void main (String [] args)
+        {
+            Scanner s = new Scanner(System.in); 
+            int l = s.nextInt();
+            while(l <=0)
+            {
+            System.out.println("Lock in and enter a positive int ");
+            l = s.nextInt();
+            
+            }
+            int count = 0 ;
+            for(int i = l ; i > 0 ; i -- )
+            {
+            if(l%i == 0)
+            {
+            System.out.println(i);
+            System.out.println(l/i);
+            count ++;
+            count ++;
+            } 
+            }
+        if (count > 2 )
+            {
+            System.out.println("composite");
+            }
+            else if (count == 1 )
+              System.out.println("1 is not prime ");
+            else 
+                System.out.println("prime");
+        
+        }
+    }
+//3
+import java.util.Scanner;
+    
+    /**
+     * Write a description of class For_Loops here.
+     *
+     * @author (your name)
+     * @version (a version number or a date)
+     */
+    public class For_Loops
+    {
+        public static void main (String [] args)
+        {
+           for(int i =1 ; i <=5 ; i++)
+           {
+            for(int c =1; c <=5 ; c++)
+            {
+            System.out.println(i + " : " + c*i );
+            
+            }
+            
+        }
+    }}
