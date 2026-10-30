@@ -1,0 +1,21 @@
+//1
+import java.util.Scanner;
+
+/**
+ * Write a description of class Strings here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Strings
+{
+    public static void main (String [] args)
+    {
+    Scanner s = new Scanner(System.in);
+    
+    
+        
+    
+    
+    }
+}
