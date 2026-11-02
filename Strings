@@ -1,18 +1,95 @@
 //1
 import java.util.Scanner;
-
-/**
- * Write a description of class Strings here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+public class Strings
+{   public static void main (String [] args)
+    {
+    Scanner s = new Scanner(System.in);
+    String str1 = s.nextLine();
+    String str2 = s.nextLine();
+    if(str1.compareTo(str2)>1)
+    {
+    System.out.println(str2+str1);
+    }
+    else if (str1.compareTo(str2)<0)
+    {
+    System.out.println(str1+str2);
+    }
+    else
+         System.out.println("they are the same");   } }
+//2
+import java.util.Scanner;
 public class Strings
 {
     public static void main (String [] args)
     {
     Scanner s = new Scanner(System.in);
+    String str = s.nextLine();
+    String first = str.substring(0,1);
+    String Last = str.substring(str.length()-1, str.length());
+    String middle = str.substring(1,str.length()-1);
+    System.out.println(Last+middle+first);
     
+    
+    
+    
+        
+    
+    
+    }
+}
+//3
+import java.util.Scanner;
+public class Strings
+{
+    public static void main (String [] args)
+    {
+    Scanner s = new Scanner(System.in);
+    String str = s.nextLine();
+     for(int i = str.length() ; i > 0 ; i--)
+     {
+        System.out.println(str.substring(0,i));
+        
+    }
+    
+    
+        
+    
+    
+    }
+}
+//4
+import java.util.Scanner;
+public class Strings
+{
+    public static void main (String [] args)
+    {
+    Scanner s = new Scanner(System.in);
+    String str = s.nextLine();
+    String word ="";
+     while(str.equals("") )
+     {  
+           if(str.substring(str.length()-1).equals("."))
+         {  
+         System.out.println("enter a proper sentence");    
+        }
+        System.out.println("enter a sentence");
+        str = s.nextLine();      
+     
+   
+    }
+    
+        for(int i = 0; i<str.length() ; i++ )
+        {
+        if(str.substring(i,i+1).equals("e"))
+        {
+        continue;
+        }
+        else 
+        word +=str.substring(i,i+1);
+    }
+        
+        
+    System.out.println(word);
     
         
     
