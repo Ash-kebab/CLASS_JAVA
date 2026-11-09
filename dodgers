@@ -1,0 +1,90 @@
+/*
+
+Working out your dog's true age used to be a case of simply multiplying it by seven. But it's more complicated than that!
+
+Different breeds of dog age at varying speeds.  Dogs age at varying speeds at different stages of their lives. 
+
+A more accurate formula would be: 
+
+Add 10.5 for each of the first two years then for each additional year. 
+•	for small or medium sized dogs add 4 
+•	for large dogs add 5 
+•	for giant breeds add 6
+
+Complete the Java program which calculates the dog’s age in human years.  */
+
+public class DogYears
+{
+    /*****
+     * Complete the toHumanYears method to calculate a dogs age
+     * in human years.
+     * 
+     * The toHumanYears method takes two input parameters:
+     *   String size - the size of a dog
+     *   int years - the age of a dog in actual years
+     *   
+     * The toHumanYears method calculates and returns a double
+     * which represents the age of the dog in equivalent human
+     * years using the algorithm below.
+     * 
+     * Add 10.5 for each of the first two years then for each 
+     * additional year...
+     *   for small or medium sized dogs add 4 
+     *   for large dogs add 5 
+     *   for giant breeds add 6
+     ****/
+    public static double toHumanYears (String size ,int age ) 
+    {
+    double actual = 0;
+    if(age <= 2 )
+    {actual = (double) age *  10.5; }
+    
+    else if (age > 2 && size.equals("small"))
+    {actual = 21 + ((age - 2) * 4 ); }
+    
+    else if (age > 2 && size.equals("Medium"))
+    {actual = 21 + ((age - 2) * 4 );}
+    
+    else if (age > 2 && size.equals("Large"))
+    {actual = 21 + ((age - 2) * 5 ); }
+    
+    else if (age > 2 && size.equals("Large"))
+    {actual = 21 + ((age - 2) * 6 ); }
+    return actual;
+
+    
+    
+    
+    }
+    
+    
+
+    /** 
+     * The main method below is complete. It runs 
+     * the method toHumanYears with a variety of input.
+     * 
+     * Below is the expected output for main method.
+     * 
+     *   A 2 year old small dog is 21.0 in human years.
+     *   A 5 year old small dog is 33.0 in human years.
+     *   A 1 year old medium dog is 10.5 in human years.
+     *   A 3 year old medium dog is 25.0 in human years.
+     *   A 4 year old large dog is 31.0 in human years.
+     *   A 8 year old giant dog is 57.0 in human years.
+     */
+    public static void main( String args[] )
+    {
+        System.out.println("A 2 year old small dog is " + 
+            toHumanYears("small",2) + " in human years.");
+        System.out.println("A 5 year old small dog is " + 
+            toHumanYears("small",5) + " in human years.");
+        System.out.println("A 1 year old medium dog is " + 
+            toHumanYears("medium",1) + " in human years.");
+        System.out.println("A 3 year old medium dog is " + 
+            toHumanYears("medium",3) + " in human years.");
+        System.out.println("A 4 year old large dog is " + 
+            toHumanYears("large",4) + " in human years.");
+        System.out.println("A 8 year old giant dog is " + 
+            toHumanYears("giant",8) + " in human years.");
+    }
+}
