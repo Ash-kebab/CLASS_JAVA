@@ -1,0 +1,60 @@
+//1 
+public static int timesTwo(int a) {
+        return a*2;
+    }
+
+//2 
+public static boolean more25(double a) {
+        if(a > 25)
+        {return true;}
+        else 
+            return false;
+            
+    }
+//3 
+   public static void winterw() {
+    int rand = (int) ((Math.random()*4)+1);
+    if (rand == 1)
+    {System.out.println("snow");}
+    else if (rand == 2)
+    {System.out.println("Ice");}
+    else if (rand == 3)
+    {System.out.println("Hot chochlate");}
+    
+       
+    }
+//4
+   public static void rev(String str){
+    for(int i = str.length()-1; i>=0; i--)
+    {
+        if (i == str.length()-1)
+        { System.out.println(str.substring(i));}
+        else
+            System.out.println(str.substring(i,i+1));
+    
+    }
+    
+    
+       
+    }
+//5
+ public static void greeting(String str, int age){
+    System.out.println(str+" is "+age+" years old");
+    }
+
+//final
+   public static void main (String [] args)
+    {
+      greeting("ricky",9);
+      greeting("nicky",9);
+      rev("hello");
+      rev("bai");
+      winterw();
+      winterw();
+      more25(23);
+      more25(99);
+      timesTwo(2);
+      timesTwo(4);
+      
+    
+    }
