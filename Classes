@@ -1,0 +1,40 @@
+
+/**
+ * Write a description of class Twostudents here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Twostudents
+{
+    public static void main (String [] args ) 
+    {
+    Student Adrian = new Student () ; 
+    Student Oliver = new Student () ; 
+    Adrian.setName("Adrian");
+    Oliver.setName("Oliver");
+    
+    Adrian.setScore(1,49);
+    Adrian.setScore(2,64);
+    Adrian.setScore(3,107);
+    
+    Oliver.setScore(1,45);
+    Oliver.setScore(1,85);
+    Oliver.setScore(1,100);
+    
+    System.out.println(Oliver.toString());
+    System.out.println(Adrian.toString());
+
+    if(Adrian.getAverage() > Oliver.getAverage() )
+    {
+    System.out.println("Adrian");
+    }
+    else 
+    {
+    System.out.println("Oliver");
+    }
+    
+    
+    
+    }
+}
