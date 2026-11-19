@@ -43,6 +43,21 @@ public class Legolab
 
     System.out.println(le3.getColor());
     System.out.println(le3.getSize());
+
+    if(le1/sqrt(le1.getSize) == sqrt(le1.getSize)  )
+        { System.out.println("yes");}
+  else 
+        {System.out.println("no");}
+    
+    if(le2/sqrt(le2.getSize) == sqrt(le2.getSize)  )
+        { System.out.println("yes");}
+  else 
+        {System.out.println("no");}
+    
+    if(le3/sqrt(le3.getSize) == sqrt(le3.getSize)  )
+        { System.out.println("yes");}
+    else 
+        {System.out.println("no");}
     
     
 
