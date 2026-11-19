@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+/**
+ * Write a description of class Legolab here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Legolab
+{
+    public static void main (String [] args) 
+    {
+    Scanner s = new Scanner (System.in); 
+    int l1 ,w1;
+    int l2 ,w2;
+    int l3 ,w3;
+    
+    String s1="",s2="",s3 = "";
+    
+    System.out.println("Enter Length x3 width x3 and color x3 for 3 lego peices");
+    l1 = s.nextInt();
+    l2 = s.nextInt();
+    l3 = s.nextInt();
+    
+    w1 = s.nextInt();
+    w2 = s.nextInt();
+    w3 = s.nextInt();
+    
+    s.nextLine();
+    s1 = s.nextLine();
+    s2 = s.nextLine();
+    s3 = s.nextLine();
+    
+    LegoPiece le1 = new LegoPiece(l1 , w1 ,s1 );    
+    LegoPiece le2 = new LegoPiece(l1 , w1 ,s1 );    
+    LegoPiece le3 = new LegoPiece(l1 , w1 ,s1 );    
+    
+    System.out.println(le1.getColor());
+    System.out.println(le1.getSize());
+
+    System.out.println(le2.getColor());
+    System.out.println(le2.getSize());
+
+    System.out.println(le3.getColor());
+    System.out.println(le3.getSize());
+    
+    
+
+    
+    }
+    
+    
+    
+}
