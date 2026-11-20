@@ -1,0 +1,91 @@
+public class SuperHero
+{
+    //instance variables 
+    private String Alias; 
+    private String Superpower; 
+    private int Health;
+    public SuperHero () 
+    {
+        Health = 50;
+        Superpower = "Unknown";
+        Alias = "Unkown";
+
+    } 
+    
+     public SuperHero (String Alias,String Superpower ,
+     int Health) 
+    {
+    if (Health >50 ||Health <= 0)
+        {
+            this.Health = 25;
+        }
+    else
+     {  this.Health = Health; }  
+        this.Superpower = Superpower;
+        this.Alias = Alias; 
+
+    } 
+    //Mutator
+    
+    public void setHealth(int Health) 
+    {
+        if (Health >50 ||Health <=  0)
+        {
+            this.Health = 25;
+        }
+    else
+     { this.Health = Health; } 
+    }
+    
+       public void setAlias (String Alias) 
+    {
+     Alias = this.Alias;
+    }
+    
+       public void setSuperpower (String Superpower) 
+    {
+    Superpower = this.Superpower;
+    }
+     
+    public void harmToHealth () 
+    {
+    Health  = Health -5 ;
+    
+    
+    }    
+    
+    
+    // Acsessor 
+       public String getAlias () 
+    {
+     return Alias;
+    }
+
+          public String getSuperpower () 
+    {
+     return Superpower;
+    }
+    
+    
+        public int getHealth() 
+    {
+     return Health;
+    }
+    
+    //Helper
+    
+    public String toString()
+    {
+    return Health +" "+ Alias +" "+ Superpower ; 
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+}
